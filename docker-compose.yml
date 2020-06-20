@@ -1,0 +1,8 @@
+version: '3'
+services:
+  frpc:
+    image: snbqt/frpc
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./frpc.ini:/frp/frpc.ini
